@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import Header from "./Header";
 import Inventory from "./Inventory";
 import Order from "./Order";
@@ -18,7 +18,7 @@ class App extends React.Component {
 
   static propTypes = {
     match: PropTypes.object
-  }
+  };
 
   componentDidMount() {
     const { params } = this.props.match;
@@ -99,7 +99,7 @@ class App extends React.Component {
     return (
       <div className="catch-of-the-day">
         <div className="menu">
-          <Header tagline="Fresh Seafood Market"/>
+          <Header tagline="Fresh Seafood Market" />
           <ul className="fishes">
             {Object.keys(this.state.fishes).map(key => (
               <Fish
@@ -122,6 +122,7 @@ class App extends React.Component {
           deleteFish={this.deleteFish}
           loadSampleFishes={this.loadSampleFishes}
           fishes={this.state.fishes}
+          storeId={this.props.match.params.storeId}
         />
       </div>
     );
