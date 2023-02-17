@@ -1,6 +1,12 @@
 {
-    "git.ignoreLimitWarning": true,
-    "files.associations": {
-        "*.js": "javascriptreact"
-    }
+	"git.ignoreLimitWarning": true,
+	"files.associations": {
+		"*.js": "javascriptreact"
+	},
+	"eslint.debug": true,
+	"eslint.format.enable": true,
+	"eslint.lintTask.enable": true,
+	"eslint.ignoreUntitled": true,
+	"eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "vue", "markdown", "react"]
 }
+
